@@ -1,5 +1,5 @@
 {% set name = "desert" %}
-{% set version = "2020.11.18" %}
+{% set version = "2022.9.22" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/desert-{{ version }}.tar.gz
-  sha256: d7b7fb521dc84eec955a766ed7e37349f998cf047f37fd9596cb09737d63c62d
+  sha256: 0f45e098915e16452a269a1da0bcbbf31df0af2173899f1c097fb2e3b0265d89
 
 build:
-  number: 2
-  skip: true   # [py2k]
+  number: 0
+  skip: true  # [py2k]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
